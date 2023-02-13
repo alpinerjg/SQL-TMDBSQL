@@ -1,0 +1,3 @@
+CREATE SCHEMA [Minion]
+AUTHORIZATION [dbo]
+GO

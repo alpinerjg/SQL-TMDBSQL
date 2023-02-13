@@ -1,0 +1,31 @@
+CREATE TABLE [dbo].[TMWSECDB_stats]
+(
+[Interval Start] [datetime] NULL,
+[Interval End] [datetime] NULL,
+[Input - ED Rows Received] [int] NULL,
+[Input - SM Rows Received] [int] NULL,
+[Input - SS Rows Received] [int] NULL,
+[Cache - ED Rows] [int] NULL,
+[Cache - SM Rows] [int] NULL,
+[Cache - SS Rows] [int] NULL,
+[Output - Unchanged Rows Sent] [int] NULL,
+[Output - New Rows Sent] [int] NULL,
+[Output - Deleted Rows Sent] [int] NULL,
+[Output - Updated SCD1 Rows Sent] [int] NULL,
+[Output - Expired SCD2 Rows Sent] [int] NULL,
+[Output - New SCD2 Rows Sent] [int] NULL,
+[Match Prep - Work Units Built] [int] NULL,
+[Match Prep - Rows Built Into Work Units] [int] NULL,
+[Match Prep - Bulk Matched Rows] [int] NULL,
+[Match Prep - Work Unit Count] [int] NULL,
+[Matching - Matched Key Queue Length] [int] NULL,
+[Matching - Skipped Rows] [int] NULL,
+[Matching - Regular Determination] [int] NULL,
+[Matching - Sort Optimization Determination] [int] NULL,
+[Matching - Undetermined] [int] NULL,
+[Thread Delay - Waiting For Input] [int] NULL,
+[Thread Delay - Matching Waiting On Caching] [int] NULL,
+[Thread Delay - Processing Waiting On Matching] [int] NULL,
+[Thread Delay - Input Waiting On Row Processing] [int] NULL
+) ON [PRIMARY]
+GO

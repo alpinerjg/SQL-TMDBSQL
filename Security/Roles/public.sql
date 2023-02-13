@@ -1,0 +1,3 @@
+GRANT CONNECT TO [public]
+GRANT EXECUTE TO [public]
+GRANT SELECT TO [public]

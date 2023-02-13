@@ -1,0 +1,30 @@
+CREATE TABLE [Minion].[BackupRestoreFileListOnlyTemp]
+(
+[DBName] [nvarchar] (400) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LogicalName] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PhysicalName] [varchar] (512) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Type] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FileGroupName] [varchar] (128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Size] [numeric] (38, 0) NULL,
+[MaxSize] [numeric] (38, 0) NULL,
+[FileId] [bigint] NULL,
+[CreateLSN] [numeric] (38, 0) NULL,
+[DropLSN] [numeric] (38, 0) NULL,
+[UniqueID] [uniqueidentifier] NULL,
+[ReadOnlyLSN] [numeric] (38, 0) NULL,
+[ReadWriteLSN] [numeric] (38, 0) NULL,
+[BackupSizeInBytes] [bigint] NULL,
+[SourceBlockSize] [bigint] NULL,
+[FileGroupId] [bigint] NULL,
+[LogGroupGUID] [uniqueidentifier] NULL,
+[DifferentialBaseLSN] [numeric] (38, 0) NULL,
+[DifferentialBaseGUID] [uniqueidentifier] NULL,
+[IsReadOnly] [int] NULL,
+[IsPresent] [int] NULL,
+[TDEThumbprint] [varbinary] (32) NULL,
+[SnapshotURL] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FilePath] [varchar] (8000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FileName] [varchar] (400) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Extension] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO
